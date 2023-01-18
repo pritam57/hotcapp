@@ -58,7 +58,7 @@ const Screen3 = () => {
                             const image = { uri: a };
                             return (
                                 <ImageBackground source={image} resizeMode="cover" style={styles.backgroundstyle}>
-                                    <View style={{ height:200,width:150 }} key={item + "a"}>
+                                    <View style={{ height: 200, width: 150 }} key={item + "a"}>
                                         <TouchableOpacity onPress={() => changescreen(item.type)}>
                                             <Text style={{ fontWeight: "900", fontSize: 25, color: "white", height: 320, width: 130, textAlign: "center", textAlignVertical: "center" }}>{item.type}</Text>
                                         </TouchableOpacity>
@@ -97,7 +97,6 @@ const styles = StyleSheet.create({
     }
 
 });
-
 
 export default Screen3;
 

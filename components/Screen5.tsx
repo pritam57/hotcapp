@@ -23,50 +23,45 @@ const Screen5 = (props: any) => {
     const images = Data[type].img
     const cimage = Data[type].img[imageactive];
     const imageone = { uri: cimage };
-    const lengthofimages = images.length-1;
+    const lengthofimages = images.length - 1;
     const [timer, setTimer] = useState(0);
     const [toggle, setToggle] = useState(false);
 
-//   counter = setInterval(() => {if(imageactive===lengthofimages-1){ handleStop()}else{ {setimageactive(imageactive =>imageactive + 1)}}}, 1000);
-    
-function handleStop() {
-    console.log("stopped")
-    setToggle(false);
-    setshow(true);
-  }; 
+    //   counter = setInterval(() => {if(imageactive===lengthofimages-1){ handleStop()}else{ {setimageactive(imageactive =>imageactive + 1)}}}, 1000);
 
-  
-
-  useEffect(() => {
-    let counter:any;
-    let y=imageactive;
-    
-    if (toggle) {
-     counter=setInterval(()=>{
-        if(y===lengthofimages){
-            handleStop()
-        }
-        else{
-            setimageactive(imageactive =>imageactive + 1);
-            console.log(imageactive+ " imageactive");
-            console.log(lengthofimages); 
-            y=y+1;
-            console.log(y);
-        }
-     },2000)
-    }
-    return () => {
-      clearInterval(counter);
+    function handleStop() {
+        console.log("stopped")
+        setToggle(false);
+        setshow(true);
     };
-  }, [toggle]);
 
-   
-  function handleStart (){
-    setshow(false)
-    setToggle(true);
-  };
+    useEffect(() => {
+        let counter: any;
+        let y = imageactive;
 
- 
+        if (toggle) {
+            counter = setInterval(() => {
+                if (y === lengthofimages) {
+                    handleStop()
+                }
+                else {
+                    setimageactive(imageactive => imageactive + 1);
+                    console.log(imageactive + " imageactive");
+                    console.log(lengthofimages);
+                    y = y + 1;
+                    console.log(y);
+                }
+            }, 2000)
+        }
+        return () => {
+            clearInterval(counter);
+        };
+    }, [toggle]);
+
+    function handleStart() {
+        setshow(false)
+        setToggle(true);
+    };
 
     const changescreen = (a: any) => {
         navigation.navigate('Screen4', { a: a });
@@ -85,7 +80,6 @@ function handleStop() {
         if (imageactive === 0) {
             setimageactive(0);
         }
-
         else {
             setimageactive(imageactive - 1);
         }
@@ -101,17 +95,10 @@ function handleStop() {
         }
     }
 
-
-
-
-
     return (
 
         <ScrollView onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
             {props.children}
-
-
-
             <TouchableOpacity >
                 <ImageBackground resizeMode="contain" source={imageone} style={{ height: windowHeight, width: windowidth }} >
 
@@ -133,11 +120,9 @@ function handleStop() {
                                 <FontAwesome5 name="stop-circle" style={{ color: "black", fontSize: 30 }} />
                             </TouchableOpacity>}
                     </View>
-
                 </ImageBackground>
             </TouchableOpacity>
         </ScrollView>
-
     )
 }
 

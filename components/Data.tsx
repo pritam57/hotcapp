@@ -57,8 +57,8 @@ const Data = [
             "https://www.gethucinema.com/wp-content/uploads/2018/06/Bhavana-Bhavana-Menon-exclusive-marriage-hd-image.jpg",
             "https://i.indiglamour.com/photogallery/hindi/events/2012/June27-2/Esha-Deol-Wedding-Sangeet-Ceremony/wide/Esha-Deol-Wedding-Sangeet-Ceremony_30967.jpg"
         ],
-         thumbnail: [
-            
+        thumbnail: [
+
             "https://fairytaleofasimplegirl.files.wordpress.com/2018/11/dscw9eawoaeftis.jpg",
             "https://media.istockphoto.com/id/831050036/photo/hindu-wedding.jpg?b=1&s=170667a&w=0&k=20&c=rz9J4VUyUsycb9nyB4w1OQWRS_J7uZrT_ZudQZbnn-8=",
             "https://www.thewedcafe.com/wp-content/uploads/2020/08/PRD_0113-Edit.jpg",
@@ -91,7 +91,7 @@ const Data = [
             "https://moviegalleri.net/wp-content/gallery/suja-varunee-wedding-reception-stills-hd/actor-actress-shivakumar-suja-varunee-wedding-reception-stills-hd-0d1ae25.jpg"
         ],
         thumbnail: [
-          "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?cs=srgb&dl=pexels-viresh-studio-1444442.jpg&fm=jpg",
+            "https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?cs=srgb&dl=pexels-viresh-studio-1444442.jpg&fm=jpg",
             "https://img.freepik.com/free-vector/hand-drawn-wedding-youtube-thumbnail_23-2149175959.jpg",
             "https://www.jaypeehotels.com/blog/wp-content/uploads/2020/07/best-5-star-luxury-wedding-venues-in-Delhi-1.jpg",
             "https://images.unsplash.com/photo-1595407753234-0882f1e77954?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8d2VkZGluZyUyMHJlY2VwdGlvbnxlbnwwfHwwfHw%3D&w=1000&q=80",
@@ -123,7 +123,7 @@ const Data = [
             "https://media.weddingz.in/images/41d5c8f94a5fbc37b5944235f1278da7/10-things-you-need-to-do-the-night-before-your-sangeet-to-minimize-your-stress.jpg"
         ],
         thumbnail: [
-        
+
             "https://twistnturns.in/images/WEDDING_PAGE_1.jpg",
             "https://www.shutterstock.com/image-photo/dhol-player-during-sangeet-mehndi-260nw-1173400465.jpg",
             "https://i.ytimg.com/vi/cb3HR0mEh5s/maxresdefault.jpg",
@@ -140,7 +140,8 @@ const Data = [
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
             "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-        ]}
+        ]
+    }
 ]
 
 
