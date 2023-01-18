@@ -51,7 +51,6 @@ const Screen3 = () => {
                 <ScrollView horizontal={true} style={{ width: "100%" }}>
                     <FlatList
                         data={Data}
-
                         renderItem={({ item, index }) => {
                             const a = item.img[0];
                             const image = { uri: a };
@@ -90,7 +89,6 @@ const styles = StyleSheet.create({
         justifyContent: "center",
 
     },
-
     image: {
         flex: 1,
     }
