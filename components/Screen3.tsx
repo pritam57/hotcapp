@@ -29,7 +29,6 @@ const Screen3 = () => {
         console.log("pressed");
     }
 
-
     const changescreenthree = () => {
         navigation.navigate('Screen2');
         console.log("pressed");
